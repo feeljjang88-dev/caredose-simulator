@@ -83,7 +83,7 @@ th{position:sticky;top:0;background:var(--panel);font-weight:600;color:var(--mut
       <span class="pill"><i class="dot"></i>챔버 Ø106×50 컵 · 보충관 ID36 · 받침 블록 (휘어진코끼리.STL)</span>
       <span class="pill"><i class="dot"></i>케이스 판 10t · 앞면 4장 · 상판 보충구 Ø85</span>
       <span class="pill"><i class="dot"></i>Raspberry Pi 5 · PCA9685 · MG996R ×4 · IR SEN0503</span>
-      <a class="pill" href="./assembly/" style="color:inherit;text-decoration:none;border-color:#B7791F"><i class="dot" style="background:#B7791F"></i>하드웨어 v2 모듈 조립 (최적화 진행 중) →</a>
+      <a class="pill" href="#v2" style="color:inherit;text-decoration:none;border-color:#B7791F"><i class="dot" style="background:#B7791F"></i>하드웨어 v2 모듈 조립 (최적화 진행 중) ↓</a>
       <span class="pill warn"><i class="dot"></i>부품 형상은 원본, 조립 위치·돌림판·경사 통로는 사진 기준 재현</span>
     </div>
   </header>
@@ -146,6 +146,14 @@ th{position:sticky;top:0;background:var(--panel);font-weight:600;color:var(--mut
   </section>
 </div>
 
+<section id="v2" style="max-width:1280px;margin:28px auto 0;display:grid;gap:10px">
+  <div class="eyebrow">NUTRONICS · 하드웨어 v2 · 최적화 진행 중 (2026.10)</div>
+  <h2 style="margin:0;font-size:clamp(20px,2.6vw,26px);color:var(--navy)">v2 배출 모듈 조립 시뮬레이터</h2>
+  <p class="lede">위 4챔버 시제품의 미완 과제(걸림·2알 동시 낙하·교체형 배출부)를 풀기 위해 배출부를 v2 모듈로 다시 설계하고 있다. 아래는 그 모듈의 조립 순서이며, 실물 출력·벤치 시험 결과에 따라 계속 업데이트된다.</p>
+  <iframe id="v2frame" src="./assembly/" title="v2 배출 모듈 조립 시뮬레이터" loading="lazy" scrolling="no"
+    style="width:100%;height:1500px;border:1px solid var(--rule);border-radius:10px;background:var(--panel)"
+    onload="try{this.style.height=this.contentDocument.documentElement.scrollHeight+'px'}catch(e){}"></iframe>
+</section>
 <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/STLLoader.js"></script>

@@ -80,7 +80,7 @@ td input { width: 16px; height: 16px }
     <h1>v2 배출 모듈 조립</h1>
     <p class="lede">출력한 챔버 1세트 (판 00) 와 서보 MG996R 로 배출 모듈 1기를 조립하는 순서다. 단계를 누르면 그 단계의 부품과 나사가 제자리로 들어간다.</p>
     <div class="pills" id="pills"></div>
-    <p style="margin:6px 0 0;padding:10px 14px;border:1px solid var(--rule);border-left:4px solid var(--amber);border-radius:8px;background:var(--panel);font-size:13.5px;max-width:90ch"><b>하드웨어 최적화 진행 중</b> — 일경험(2026.5~6) 4챔버 시제품의 미완 과제(걸림·2알 동시 낙하·교체형 배출부)를 해결하기 위해 배출부를 v2 모듈로 다시 설계하고 있다. 이 조립 순서는 실물 출력·벤치 시험 결과에 따라 계속 업데이트된다. (2026.10 기준, 실물 출력 전) · <a href="../" style="color:var(--blue)">← 4챔버 시제품 3D 시뮬레이터</a></p>
+    <p style="margin:6px 0 0;padding:10px 14px;border:1px solid var(--rule);border-left:4px solid var(--amber);border-radius:8px;background:var(--panel);font-size:13.5px;max-width:90ch"><b>하드웨어 최적화 진행 중</b> — 일경험(2026.5~6) 4챔버 시제품의 미완 과제(걸림·2알 동시 낙하·교체형 배출부)를 해결하기 위해 배출부를 v2 모듈로 다시 설계하고 있다. 이 조립 순서는 실물 출력·벤치 시험 결과에 따라 계속 업데이트된다. (2026.10 기준, 실물 출력 전) · <a href="../" target="_top" style="color:var(--blue)">← 4챔버 시제품 3D 시뮬레이터</a></p>
   </header>
 
   <section class="bench">
@@ -275,4 +275,5 @@ requestAnimationFrame(frame);
 })();
 </script>
 
+<script>if (window.top !== window) document.querySelector('header').hidden = true; // 시뮬레이터 페이지 안에 들어갈 때는 제목 중복을 숨김</script>
 </body></html>
